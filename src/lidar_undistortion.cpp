@@ -162,7 +162,7 @@ public:
 
         auto end = system_clock::now();
         auto duration = duration_cast<microseconds>(end - start);
-        cout <<  "Spend "  << double(duration.count()) / 1000.0 << " miliseconds" << endl;
+        // cout <<  "Spend "  << double(duration.count()) / 1000.0 << " miliseconds" << endl;
       }
       else
       {

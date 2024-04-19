@@ -4,16 +4,16 @@
 
   <node name="lidar_undistortion_node" pkg="livox_undistortion"  type="livox_undistortion" output="screen">
 
-    <param name="lidar_topic" value="/scan"/>
+    <param name="lidar_topic" value="/locobot/scan"/>
     <!-- Estimated time of lidar message transmission(ms) -->
     <param name="lidar_msg_delay_time" value="10.0"/>
 
     <param name="scan_direction_clockwise" value="true"/>
 
-    <param name="imu_topic" value="/mti/sensor/imu"/>
-    <param name="imu_frequency" value="100.0"/>
+    <param name="imu_topic" value="/wit/imu"/>
+    <param name="imu_frequency" value="200.0"/>
 
-    <param name="output_frame_id" value="/laser"/>
+    <param name="output_frame_id" value="laser_frame_link"/>
     <param name="pub_raw_scan_pointcloud" value="true"/>
 
     <param name="pub_laserscan" value="true"/>
